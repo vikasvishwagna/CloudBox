@@ -1,0 +1,13 @@
+const express = require("express");
+const router = require("./routes/user.routes");
+const app = express();
+const userRouter = require('./routes/user.routes');
+
+app.set('view engine', 'ejs');
+
+app.use('/user', userRouter);
+
+
+app.listen(3000,()=>{
+  console.log('running the app on port 3000')
+})

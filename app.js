@@ -2,6 +2,8 @@ const express = require("express");
 const router = require("./routes/user.routes");
 const app = express();
 const userRouter = require('./routes/user.routes');
+const { body } = require('express-validator');
+
 
 app.set('view engine', 'ejs');
 
